@@ -8,19 +8,17 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: blueviolet;
+  background: black;
 }
 
-/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;
   min-height: 100%;
   padding-bottom: 130px;
   overflow: auto;
-  background: crimson;
+  background: lightgreen;
 }
 
-/* The footer is positioned at the bottom of the page */
 .footer {
   position: absolute;
   right: 0;
@@ -30,14 +28,13 @@ body {
   background: #007af3;
 }
 
-/* The code styles the text at the bottom of the footer */
 .footer > .bottom {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: black;
+  background: red;
 }
 
 .navbar {
@@ -45,7 +42,6 @@ body {
   margin: 0;
 }
 
-/* This CSS styles the ufo icon in the navbar */
 .nav-ufo {
   position: absolute;
   bottom: 5px;
@@ -55,7 +51,6 @@ body {
 
 }
 
-/* Adding styles to the aside and filter form */
 .ufo-form {
   margin-top: 50px;
 }
@@ -94,13 +89,12 @@ select {
   margin-top: 50px;
 }
 
-/* The styles for the parallax */
 .hero {
   position: relative;
   height: 550px;
   padding: 20px;
   margin: 0;
-  background: black;
+  background: yellow;
   background-image: url("../images/nasa.jpg");
   background-attachment: fixed;
   background-position: bottom center;
@@ -120,28 +114,22 @@ select {
   animation-delay: 1.2s;
 }
 
-/* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
   color: #000000;
 }
 
 .form-control::-moz-placeholder {
-  /* Firefox 19+ */
   color: #ffffff;
 }
 
 .form-control:-ms-input-placeholder {
-  /* IE 10+ */
   color: #000000;
 }
 
 .form-control:-moz-placeholder {
-  /* Firefox 18- */
   color: #ffffff;
 }
 
-/* media queries which will only be activated at specific screen sizes */
 @media (max-width: 800px) {
   #table-area td {
     font-size: 1em;
@@ -169,7 +157,7 @@ select {
     height: 1px;
     margin-top: 20px;
     content: " ";
-    background: aliceblue;
+    background: green;
   }
 
   #table-area td {
@@ -194,7 +182,6 @@ select {
   }
 }
 
-/* keyframe animations which will be used to animate the title */
 @keyframes title {
   from {
     opacity: 0;
