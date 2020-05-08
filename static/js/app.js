@@ -1,13 +1,13 @@
-var tableData = data;
+var table = data;
 
-var tbody = d3.select("tbody");
+var body = d3.select("tbody");
 
 function buildTable(data) {
-  tbody.html("");
+  body.html("");
 
 
   data.forEach((dataRow) => {
-    var row = tbody.append("tr");
+    var row = body.append("tr");
 
     
     Object.values(dataRow).forEach((val) => {
@@ -41,7 +41,7 @@ function updateFilters() {
 function filterTable() {
 
   
-  let filteredData = tableData;
+  let filteredData = table;
 
  
   Object.entries(filters).forEach(([key, value]) => {
@@ -53,4 +53,4 @@ function filterTable() {
 
 d3.selectAll(".filter").on("change", updateFilters);
 
-buildTable(tableData);
+buildTable(table);
